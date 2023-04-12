@@ -1,1 +1,11 @@
-
+cff-version: 1.0.0
+message: "If you use this dataset, please cite our paper titled : Toothbrushing monitoring using motion sensors"
+authors:
+- family-names: "Essalat"
+  given-names: "Mahmoud"
+  orcid: "https://orcid.org/0000-0002-3807-4473"
+title: "Toothbrushing-region-detection"
+version: 1.0.0
+doi: 10.5281/zenodo.7820261
+date-released: 2023-04-21
+url: "https://github.com/ROBAS-UCLA/Toothbrushing-region-detection"
