@@ -1,0 +1,218 @@
+Direction,Brush,Method,is_left_handed,file_name,patient_id,session_id
+2,Manual,2,FALSE,P6Day37.csv,P6,37
+1,Manual ,2,FALSE,P9Day9.csv,P9,9
+2,Electronic,1,FALSE,P8Day16.csv,P8,16
+1,Manual ,1,FALSE,P9Day16.csv,P9,16
+1,Manual ,1,FALSE,P8Day17.csv,P8,17
+2,Electronic,2,FALSE,P3Day28.csv,P3,28
+1,Electronic,1,FALSE,P2Day14.csv,P2,14
+1,Manual,1,FALSE,P3Day14.csv,P3,14
+1,Manual ,1,FALSE,P7Day36.csv,P7,36
+2,Manual,1,FALSE,P6Day36.csv,P6,36
+2,Manual ,2,FALSE,P12Day20.csv,P12,20
+1,Electronic,2,FALSE,P12Day34.csv,P12,34
+2,Manual ,1,FALSE,P12Day22.csv,P12,22
+1,Electronic,2,FALSE,P12Day36.csv,P12,36
+2,Electronic,1,FALSE,P4Day1.csv,P4,1
+1,Electronic,2,FALSE,P9Day15.csv,P9,15
+1,Electronic,1,FALSE,P9Day29.csv,P9,29
+1,Manual ,1,FALSE,P8Day29.csv,P8,29
+1,Electronic,1,TRUE,P5Day5.csv,P5,5
+1,Manual ,1,FALSE,P9Day28.csv,P9,28
+2,Manual ,1,FALSE,P8Day14.csv,P8,14
+1,Manual,1,FALSE,P6Day21.csv,P6,21
+2,Electronic,1,FALSE,P12Day37.csv,P12,37
+1,Electronic,1,FALSE,P12Day23.csv,P12,23
+1,Manual ,1,FALSE,P12Day27.csv,P12,27
+1,Electronic,1,FALSE,P12Day33.csv,P12,33
+2,Manual,1,FALSE,P6Day19.csv,P6,19
+1,Manual ,1,FALSE,P7Day19.csv,P7,19
+1,Electronic,1,FALSE,P6Day31.csv,P6,31
+1,Manual,1,FALSE,P2Day13.csv,P2,13
+1,Manual,1,FALSE,P3Day13.csv,P3,13
+1,Manual,1,FALSE,P4Day4.csv,P4,4
+2,Manual ,2,FALSE,P9Day38.csv,P9,38
+1,Manual,1,TRUE,P5Day1.csv,P5,1
+1,Electronic,2,FALSE,P9Day39.csv,P9,39
+1,Electronic,1,FALSE,P3Day12.csv,P3,12
+1,Electronic,2,FALSE,P6Day18.csv,P6,18
+2,Manual ,1,FALSE,P12Day32.csv,P12,32
+2,Manual ,2,FALSE,P12Day26.csv,P12,26
+1,Manual ,2,FALSE,P12Day18.csv,P12,18
+1,Manual ,1,FALSE,P12Day30.csv,P12,30
+1,Electronic,2,FALSE,P12Day24.csv,P12,24
+1,Manual ,2,FALSE,P7Day26.csv,P7,26
+1,Electronic  Manual,1,FALSE,P2Day38.csv,P2,38
+2,Manual,2,FALSE,P2Day10.csv,P2,10
+1,Electronic,2,FALSE,P8Day13.csv,P8,13
+2,Electronic,2,FALSE,P9Day13.csv,P9,13
+2,Electronic,1,FALSE,P4Day6.csv,P4,6
+1,Electronic,1,FALSE,P2Day39.csv,P2,39
+1,Manual,1,FALSE,P6Day33.csv,P6,33
+2,Electronic,1,FALSE,P12Day25.csv,P12,25
+1,Electronic,1,FALSE,P12Day19.csv,P12,19
+1,Electronic,1,FALSE,P10Day39.csv,P10,39
+1,Manual,2,FALSE,P6Day4.csv,P6,4
+1,Manual ,1,FALSE,P11Day11.csv,P11,11
+1,Electronic,1,FALSE,P7Day1.csv,P7,1
+1,Electronic,2,TRUE,P1Day19.csv,P1,19
+1,Electronic,1,TRUE,P1Day31.csv,P1,31
+2,Electronic,1,FALSE,P3Day8.csv,P3,8
+2,Electronic,1,TRUE,P1Day18.csv,P1,18
+1,Electronic,1,FALSE,P11Day38.csv,P11,38
+1,Electronic,1,FALSE,P6Day5.csv,P6,5
+1,Electronic,1,FALSE,P4Day12.csv,P4,12
+1,Electronic,1,TRUE,P5Day10.csv,P5,10
+1,Electronic,1,FALSE,P6Day7.csv,P6,7
+1,Manual ,1,FALSE,P11Day12.csv,P11,12
+1,Electronic,1,TRUE,P1Day26.csv,P1,26
+1,Manual,1,TRUE,P1Day27.csv,P1,27
+2,Manual ,2,FALSE,P7Day3.csv,P7,3
+1,Manual,1,TRUE,P5Day11.csv,P5,11
+1,Electronic,1,FALSE,P4Day11.csv,P4,11
+1,Electronic,1,TRUE,P5Day39.csv,P5,39
+1,Manual ,2,FALSE,P12Day40.csv,P12,40
+1,Electronic,2,FALSE,P4Day29.csv,P4,29
+1,Electronic,1,FALSE,P10Day17.csv,P10,17
+1,Manual,1,TRUE,P1Day37.csv,P1,37
+2,Electronic,1,TRUE,P1Day23.csv,P1,23
+2,Electronic,1,TRUE,P5Day28.csv,P5,28
+2,Electronic,1,FALSE,P4Day28.csv,P4,28
+1,Electronic,1,TRUE,P5Day14.csv,P5,14
+1,Manual,1,TRUE,P5Day16.csv,P5,16
+2,Manual ,1,FALSE,P10Day28.csv,P10,28
+1,Electronic,1,TRUE,P1Day34.csv,P1,34
+1,Electronic,1,FALSE,P7Day4.csv,P7,4
+1,Manual,1,FALSE,P2Day9.csv,P2,9
+1,Electronic,1,FALSE,P2Day8.csv,P2,8
+2,Manual ,2,FALSE,P7Day5.csv,P7,5
+1,Manual,1,TRUE,P1Day35.csv,P1,35
+1,Manual ,1,FALSE,P11Day15.csv,P11,15
+2,Manual,1,FALSE,P4Day17.csv,P4,17
+1,Manual,2,FALSE,P4Day26.csv,P4,26
+1,Manual,1,FALSE,P4Day32.csv,P4,32
+1,Manual ,1,FALSE,P10Day18.csv,P10,18
+1,Manual,2,TRUE,P1Day38.csv,P1,38
+1,Manual ,1,FALSE,P7Day8.csv,P7,8
+2,Manual,2,TRUE,P1Day10.csv,P1,10
+2,Manual,2,FALSE,P2Day5.csv,P2,5
+1,Electronic,1,FALSE,P9Day40.csv,P9,40
+1,Manual ,1,FALSE,P8Day40.csv,P8,40
+1,Manual ,1,FALSE,P11Day3.csv,P11,3
+1,Manual ,1,FALSE,P11Day2.csv,P11,2
+1,Electronic,1,FALSE,P2Day4.csv,P2,4
+1,Manual,1,TRUE,P1Day11.csv,P1,11
+1,Electronic,1,FALSE,P7Day9.csv,P7,9
+2,Electronic,1,TRUE,P1Day39.csv,P1,39
+1,Manual ,1,FALSE,P11Day25.csv,P11,25
+2,Manual ,1,FALSE,P10Day31.csv,P10,31
+1,Electronic,1,FALSE,P10Day25.csv,P10,25
+2,Electronic,1,FALSE,P11Day31.csv,P11,31
+2,Manual ,1,FALSE,P10Day19.csv,P10,19
+1,Manual,1,FALSE,P4Day33.csv,P4,33
+1,Manual,2,FALSE,P4Day19.csv,P4,19
+1,Manual,2,FALSE,P4Day25.csv,P4,25
+2,Electronic,1,FALSE,P10Day33.csv,P10,33
+1,Electronic,1,FALSE,P10Day27.csv,P10,27
+1,Electronic,1,FALSE,P3Day40.csv,P3,40
+1,Manual,1,TRUE,P1Day13.csv,P1,13
+1,Electronic,1,FALSE,P2Day6.csv,P2,6
+1,Manual,1,FALSE,P3Day3.csv,P3,3
+1,Manual ,2,FALSE,P11Day1.csv,P11,1
+1,Manual,1,FALSE,P3Day2.csv,P3,2
+2,Manual,1,FALSE,P2Day7.csv,P2,7
+1,Manual ,1,FALSE,P11Day32.csv,P11,32
+1,Manual ,1,FALSE,P10Day26.csv,P10,26
+1,Electronic,1,FALSE,P11Day26.csv,P11,26
+1,Manual,1,FALSE,P4Day30.csv,P4,30
+1,Manual,1,FALSE,P4Day34.csv,P4,34
+1,Electronic,1,FALSE,P10Day22.csv,P10,22
+1,Manual,2,FALSE,P3Day6.csv,P3,6
+1,Manual,1,FALSE,P2Day2.csv,P2,2
+1,Electronic,1,TRUE,P1Day17.csv,P1,17
+2,Electronic,2,FALSE,P11Day23.csv,P11,23
+1,Manual,1,TRUE,P5Day23.csv,P5,23
+1,Electronic,1,FALSE,P4Day37.csv,P4,37
+2,Electronic,2,FALSE,P10Day35.csv,P10,35
+1,Manual ,1,FALSE,P10Day3.csv,P10,3
+1,Electronic,1,FALSE,P11Day7.csv,P11,7
+2,Electronic,2,TRUE,P1Day14.csv,P1,14
+1,Manual ,1,FALSE,P11Day34.csv,P11,34
+1,Electronic,1,TRUE,P5Day22.csv,P5,22
+1,Electronic,1,FALSE,P4Day36.csv,P4,36
+1,Electronic,2,FALSE,P2Day20.csv,P2,20
+1,Manual,1,TRUE,P1Day6.csv,P1,6
+2,Electronic,2,FALSE,P2Day34.csv,P2,34
+1,Electronic,1,FALSE,P3Day20.csv,P3,20
+1,Manual ,1,FALSE,P9Day23.csv,P9,23
+2,Electronic,1,FALSE,P8Day37.csv,P8,37
+2,Electronic,1,FALSE,P9Day37.csv,P9,37
+1,Manual ,1,FALSE,P8Day5.csv,P8,5
+1,Electronic,2,FALSE,P8Day4.csv,P8,4
+1,Electronic,1,FALSE,P9Day36.csv,P9,36
+1,Manual ,1,FALSE,P8Day36.csv,P8,36
+2,Electronic,1,FALSE,P9Day1.csv,P9,1
+1,Manual,1,FALSE,P2Day35.csv,P2,35
+1,Manual,1,TRUE,P1Day7.csv,P1,7
+1,Manual,1,FALSE,P3Day21.csv,P3,21
+1,Manual,1,FALSE,P2Day21.csv,P2,21
+2,Manual,1,FALSE,P6Day17.csv,P6,17
+2,Manual ,1,FALSE,P12Day29.csv,P12,29
+2,Electronic,1,FALSE,P12Day1.csv,P12,1
+1,Electronic,1,FALSE,P12Day15.csv,P12,15
+2,Electronic,2,FALSE,P12Day17.csv,P12,17
+1,Manual ,1,FALSE,P7Day15.csv,P7,15
+2,Electronic,1,FALSE,P6Day15.csv,P6,15
+1,Manual,1,FALSE,P3Day23.csv,P3,23
+1,Electronic,1,TRUE,P1Day5.csv,P1,5
+1,Manual,1,FALSE,P2Day37.csv,P2,37
+1,Manual ,1,FALSE,P9Day34.csv,P9,34
+1,Electronic,1,FALSE,P8Day6.csv,P8,6
+1,Electronic,2,FALSE,P8Day7.csv,P8,7
+1,Manual ,1,FALSE,P8Day35.csv,P8,35
+1,Electronic,1,FALSE,P9Day35.csv,P9,35
+1,Electronic,1,FALSE,P8Day21.csv,P8,21
+1,Manual,1,FALSE,P4Day9.csv,P4,9
+1,Electronic,1,FALSE,P2Day22.csv,P2,22
+1,Manual,2,FALSE,P3Day22.csv,P3,22
+1,Electronic,1,TRUE,P1Day4.csv,P1,4
+1,Manual,1,FALSE,P6Day14.csv,P6,14
+1,Manual ,2,FALSE,P12Day16.csv,P12,16
+1,Electronic,2,FALSE,P6Day38.csv,P6,38
+2,Electronic,1,FALSE,P7Day10.csv,P7,10
+2,Electronic,1,FALSE,P2Day32.csv,P2,32
+2,Electronic,1,FALSE,P3Day32.csv,P3,32
+1,Electronic,1,FALSE,P8Day19.csv,P8,19
+1,Manual ,2,FALSE,P9Day31.csv,P9,31
+2,Manual ,1,FALSE,P9Day25.csv,P9,25
+1,Electronic,1,FALSE,P8Day3.csv,P8,3
+2,Electronic,1,TRUE,P5Day9.csv,P5,9
+1,Manual ,1,FALSE,P9Day24.csv,P9,24
+2,Electronic,2,FALSE,P8Day24.csv,P8,24
+1,Manual ,1,FALSE,P9Day30.csv,P9,30
+1,Manual ,2,FALSE,P8Day18.csv,P8,18
+2,Electronic,1,FALSE,P3Day33.csv,P3,33
+1,Electronic,1,FALSE,P2Day27.csv,P2,27
+2,Manual,1,FALSE,P2Day33.csv,P2,33
+1,Manual,1,TRUE,P1Day1.csv,P1,1
+2,Manual,1,FALSE,P3Day27.csv,P3,27
+1,Electronic,2,FALSE,P7Day11.csv,P7,11
+1,Electronic,1,FALSE,P10Day40.csv,P10,40
+1,Electronic,2,FALSE,P11Day40.csv,P11,40
+1,Manual,1,TRUE,P5Day40.csv,P5,40
+2,Electronic,1,FALSE,P12Day39.csv,P12,39
+1,Manual ,2,FALSE,P7Day13.csv,P7,13
+2,Manual,1,FALSE,P3Day31.csv,P3,31
+2,Manual,1,TRUE,P1Day3.csv,P1,3
+2,Manual,1,FALSE,P2Day31.csv,P2,31
+1,Electronic,1,FALSE,P9Day5.csv,P9,5
+1,Electronic,1,FALSE,P9Day26.csv,P9,26
+1,Electronic,1,FALSE,P8Day27.csv,P8,27
+1,Manual ,1,FALSE,P8Day33.csv,P8,33
+2,Electronic,1,FALSE,P2Day30.csv,P2,30
+1,Electronic,1,TRUE,P1Day2.csv,P1,2
+1,Electronic,1,FALSE,P2Day24.csv,P2,24
+1,Manual,1,FALSE,P3Day30.csv,P3,30
+2,Electronic,1,FALSE,P3Day18.csv,P3,18
+1,Manual,1,FALSE,P2Day18.csv,P2,18
+1,Electronic,1,FALSE,P12Day38.csv,P12,38
