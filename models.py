@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 
 from transformers import BertModel, BertConfig, BertForSequenceClassification
-from attention import CustomBertSelfAttention
+# from attention import CustomBertSelfAttention
 from get_embed import EmbeddedFeatures
 
 class BERTClassifierCostum(nn.Module):
@@ -392,92 +392,92 @@ class LayerDrop(nn.ModuleList):
                 yield m
 
 
-class BERTModelCostum(nn.Module):
-    """
-    ? Note: We are trying to diversify the model to see which one will
-    ? work best
-    """
+# class BERTModelCostum(nn.Module):
+#     """
+#     ? Note: We are trying to diversify the model to see which one will
+#     ? work best
+#     """
 
-    def __init__(self, transformer_config, eval_config, segment_config):
-        super().__init__()
-        # ? Remove all unrelated fields like regionLabels, etc.
-        #data_config["keep_fields"] = resize_keep_field(data_config["keep_fields"])
-        #config = self.__read_config(config_file, data_config)
+#     def __init__(self, transformer_config, eval_config, segment_config):
+#         super().__init__()
+#         # ? Remove all unrelated fields like regionLabels, etc.
+#         #data_config["keep_fields"] = resize_keep_field(data_config["keep_fields"])
+#         #config = self.__read_config(config_file, data_config)
 
-        self.__init_embed(transformer_config, segment_config)
-        self.__init_upsample(transformer_config, eval_config)
-        self.__init_encoder(transformer_config, segment_config)
-        self.__init_weight()
-        self.fc = nn.Linear(transformer_config["hidden_size"], eval_config['num_dental_regs'])
+#         self.__init_embed(transformer_config, segment_config)
+#         self.__init_upsample(transformer_config, eval_config)
+#         self.__init_encoder(transformer_config, segment_config)
+#         self.__init_weight()
+#         self.fc = nn.Linear(transformer_config["hidden_size"], eval_config['num_dental_regs'])
 
-    def __init_embed(self, transformer_config, segment_config) -> None:
-        self.embed_features = EmbeddedFeatures(transformer_config['hidden_size'], segment_config['segment_length'], transformer_config['position_embedding_dim'])
+#     def __init_embed(self, transformer_config, segment_config) -> None:
+#         self.embed_features = EmbeddedFeatures(transformer_config['hidden_size'], segment_config['segment_length'], transformer_config['position_embedding_dim'])
 
-    def __init_upsample(self, transformer_config, eval_config) -> None:
-        # TODO: Should we add layernorm?
-        # TODO: Check either summation or concat
-        upsample_choice = transformer_config["upsample_unit"]
-        if upsample_choice.lower() == "cnn":
-            # ! This is equivalent to fully connected network
-            self.upsample = nn.Conv1d(
-                len(eval_config["data_fields"]),
-                transformer_config["hidden_size"],
-                kernel_size=transformer_config['kernel_size'],
-                bias=True
-            )
-        else:
-            self.upsample = nn.Identity()
+#     def __init_upsample(self, transformer_config, eval_config) -> None:
+#         # TODO: Should we add layernorm?
+#         # TODO: Check either summation or concat
+#         upsample_choice = transformer_config["upsample_unit"]
+#         if upsample_choice.lower() == "cnn":
+#             # ! This is equivalent to fully connected network
+#             self.upsample = nn.Conv1d(
+#                 len(eval_config["data_fields"]),
+#                 transformer_config["hidden_size"],
+#                 kernel_size=transformer_config['kernel_size'],
+#                 bias=True
+#             )
+#         else:
+#             self.upsample = nn.Identity()
 
-    def __init_encoder(self, transformer_config: Dict[str, Any], segment_config) -> None:
-        """
-        If we run normal attention mechanism, we can just run from
-        Huggingface so that we can sure about the result
-        """
-        bert_config = BertConfig(
-            hidden_size=transformer_config["hidden_size"], #+transformer_config["position_embedding_dim"],
-            intermediate_size=transformer_config["intermediate_size"],
-            num_attention_heads=transformer_config["num_attention_heads"],
-            hidden_dropout_prob=transformer_config["hidden_dropout_prob"],
-            max_position_embeddings=segment_config["segment_length"],
-            attention_probs_dropout_prob=transformer_config["attention_probs_dropout_prob"],
-            hidden_act=transformer_config["hidden_activation"],
-            num_hidden_layers=transformer_config["num_hidden_layers"],
-        )
-        self.encoder = BertModel(bert_config)
+#     def __init_encoder(self, transformer_config: Dict[str, Any], segment_config) -> None:
+#         """
+#         If we run normal attention mechanism, we can just run from
+#         Huggingface so that we can sure about the result
+#         """
+#         bert_config = BertConfig(
+#             hidden_size=transformer_config["hidden_size"], #+transformer_config["position_embedding_dim"],
+#             intermediate_size=transformer_config["intermediate_size"],
+#             num_attention_heads=transformer_config["num_attention_heads"],
+#             hidden_dropout_prob=transformer_config["hidden_dropout_prob"],
+#             max_position_embeddings=segment_config["segment_length"],
+#             attention_probs_dropout_prob=transformer_config["attention_probs_dropout_prob"],
+#             hidden_act=transformer_config["hidden_activation"],
+#             num_hidden_layers=transformer_config["num_hidden_layers"],
+#         )
+#         self.encoder = BertModel(bert_config)
 
-        if transformer_config["attention_option"] == "custom":
-            if transformer_config["layer_drop_prob"] > 0:
-                layers = LayerDrop(p=transformer_config["layerdrop"])
-            else:
-                layers = nn.ModuleList([])
+#         if transformer_config["attention_option"] == "custom":
+#             if transformer_config["layer_drop_prob"] > 0:
+#                 layers = LayerDrop(p=transformer_config["layerdrop"])
+#             else:
+#                 layers = nn.ModuleList([])
 
-            for layer in self.encoder.encoder.layer:
-                layers.append(layer)
+#             for layer in self.encoder.encoder.layer:
+#                 layers.append(layer)
 
-            transformer_config["max_position_embeddings"] = bert_config.max_position_embeddings
-            for layer in layers:
-                layer.attention.self = CustomBertSelfAttention(transformer_config)
+#             transformer_config["max_position_embeddings"] = bert_config.max_position_embeddings
+#             for layer in layers:
+#                 layer.attention.self = CustomBertSelfAttention(transformer_config)
 
-    def __init_weight(self) -> None:
-        nn.init.xavier_uniform_(
-            self.upsample.weight, gain=nn.init.calculate_gain("relu")
-        )
+#     def __init_weight(self) -> None:
+#         nn.init.xavier_uniform_(
+#             self.upsample.weight, gain=nn.init.calculate_gain("relu")
+#         )
 
 
-    def forward(
-        self,
-        inputs: torch.Tensor,
-        patient_ids: torch.Tensor = None,
-        session_ids: torch.Tensor = None,
-    ) -> torch.Tensor:
-        # ! Upsample the inputs before feeding into the transformers
-        """
-        TODO: how to get context vector
-        """
+#     def forward(
+#         self,
+#         inputs: torch.Tensor,
+#         patient_ids: torch.Tensor = None,
+#         session_ids: torch.Tensor = None,
+#     ) -> torch.Tensor:
+#         # ! Upsample the inputs before feeding into the transformers
+#         """
+#         TODO: how to get context vector
+#         """
 
-        embedded_input = self.embed_features(self.upsample(inputs.permute(0, 2, 1)).permute(0, 2, 1))
+#         embedded_input = self.embed_features(self.upsample(inputs.permute(0, 2, 1)).permute(0, 2, 1))
 
-        outputs = self.encoder(inputs_embeds=embedded_input)
-        batch = self.fc(outputs["pooler_output"])
+#         outputs = self.encoder(inputs_embeds=embedded_input)
+#         batch = self.fc(outputs["pooler_output"])
         
-        return batch
+#         return batch

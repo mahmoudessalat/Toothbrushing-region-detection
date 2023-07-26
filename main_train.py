@@ -20,7 +20,7 @@ import torch
 # from adabelief_pytorch import AdaBelief
 # import plotly.figure_factory as ff
 
-from global_constants import region_names, merged_region_names, days_poor_acc
+from global_constants import region_names, merged_region_names
 from train_test_loader import create_patient_out_loader, create_kfold_loader, create_session_out_loader
 from ETL import process_meta_files, create_patients_datasets_dict, create_all_datasets, create_sessions_datasets_dict, sample_based_data_transform
 from train_validate import train_model, validate_model

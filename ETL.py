@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 from data_class import RobasDataset
-from global_constants import region_map, region_map_merge, days_not_labeled, days_poor_acc, left_handed_patients, samp_freq
+from global_constants import region_map, region_map_merge, days_not_labeled, left_handed_patients, samp_freq
 from project_constants import unlabeled_folders, patient_out_not_include, session_out_not_include
 from utils_new_paper import load_dataset_new_paper
 
@@ -292,9 +292,6 @@ def filter_files(file_name, curr_file_meta_config, eval_config):
     if eval_config['dataset_type'] == 'mine':
         patient_id, session_id = file_name.split('.')[0].split("Day")[0], int(file_name.split('.')[0].split("Day")[1])
         
-        if session_id in days_poor_acc[patient_id]:
-            return True
-
         if session_id in days_not_labeled[patient_id]:
             return True
 
